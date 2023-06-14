@@ -12,13 +12,13 @@ if(zona=='zn'):
     else:
         print('Não pode executar o projeto')
 
-if(zona=='zl' or zona=='zo'):
+elif(zona=='zl' or zona=='zo'):
     if(percentual<=30):
         print('Pode executar o projeto')
     else:
         print('Não pode executar o projeto')
 
-if(zona=='zs'):
+elif(zona=='zs'):
     if(percentual<=40):
         print('Pode executar o projeto')
     else:
