@@ -1,0 +1,3 @@
+pesoEmQuilos=float(input('Insira seu peso: '))
+pesoEmGramas=pesoEmQuilos*1000
+print(pesoEmGramas)
