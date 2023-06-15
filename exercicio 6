@@ -1,0 +1,5 @@
+salariofixo=float(input('Insira seu salario: '))
+vendas=float(input('Insira o valor das vendas: '))
+comissao=vendas*0.04
+salariofixo=salariofixo+comissao
+print('O salario final é ',salariofixo,'e a comissão é',comissao)
