@@ -1,0 +1,18 @@
+num1=float(input('Insira um numero: '))
+num2=float(input('Insira um numero: '))
+opcao=int(input('Insira um número para realizar uma operação:\n\n1-Média entre os números digitados'
+      '\n2-Diferença do maior pelo menor\n3-Produto entre os números digitados\n4-Divisão do primeiro pelo segundo\n'))
+if opcao == 1:
+    print((num1+num2)/2)
+elif opcao == 2:
+    lista=[]
+    lista.append(num1)
+    lista.append(num2)
+    lista.sort()
+    print(lista[1]-lista[0])
+elif opcao == 3:
+    print(num1*num2)
+elif opcao == 4:
+    print(num1/num2)
+else:
+    print('Opção inválida')
