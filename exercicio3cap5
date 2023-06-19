@@ -1,0 +1,21 @@
+faixa1=[]
+faixa2=[]
+faixa3=[]
+faixa4=[]
+faixa5=[]
+for i in range(15):
+    idade=int(input('Insira uma idade: '))
+    if idade<=15:
+        faixa1.append(idade)
+    elif 15<idade<=30:
+        faixa2.append(idade)
+    elif 30<idade<=45:
+        faixa3.append(idade)
+    elif 46<idade<=60:
+        faixa4.append(idade)
+    else:
+        faixa5.append(idade)
+porcentagem1=(len(faixa1)/15)*100
+porcentagem5=(len(faixa5)/15)*100
+print('faixa 1 -',len(faixa1),'\nfaixa 2 -',len(faixa2),'\nfaixa 3 -',len(faixa3),'\nfaixa 4- ',len(faixa4),'\nfaixa 5- ',len(faixa5))
+print('porcentagem faixa 1 {:.2f}%\nporcentagem faixa 2 {:.2f}%'.format(porcentagem1,porcentagem5))
