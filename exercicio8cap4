@@ -1,0 +1,5 @@
+salario=float(input('Insira o salario: '))
+if salario<=300:
+    print(salario*1.35)
+else:
+    print(salario*1.15)
