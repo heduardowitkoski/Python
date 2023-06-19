@@ -1,0 +1,17 @@
+saldomedio=float(input('Insira o saldo médio: '))
+if saldomedio>400:
+    credito=saldomedio*0.3
+    print(saldomedio)
+    print(credito)
+elif 300<saldomedio<=400:
+    credito=saldomedio*0.25
+    print(saldomedio)
+    print(credito)
+elif 200<saldomedio<=300:
+    credito=saldomedio*0.20
+    print(saldomedio)
+    print(credito)
+else:
+    credito=saldomedio*0.1
+    print(saldomedio)
+    print(credito)
