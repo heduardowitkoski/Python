@@ -1,0 +1,18 @@
+qtdeidade1=0
+qtdeidade2=0
+qtdeidade3=0
+somaaltura=0
+for i in range (5):
+    idade=int(input('Insira uma idade: '))
+    altura=float(input('Insira uma altura: '))
+    peso=float(input('Insira um peso: '))
+    if idade>50:
+        qtdeidade1+=1
+    if 10<=idade<=20:
+        qtdeidade2+=1
+        somaaltura=somaaltura+altura
+    if peso<40:
+        qtdeidade3+=1
+print(qtdeidade1)
+print(somaaltura/qtdeidade2)
+print((qtdeidade3*100)/5,'%')
