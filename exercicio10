@@ -1,0 +1,7 @@
+custodefabrica=float(input('Insira o custo de fábrica: '))
+if custodefabrica<=12000:
+    print(custodefabrica*1.05)
+elif 12000<custodefabrica<=25000:
+    print(custodefabrica*1.25)
+else:
+    print(custodefabrica*1.35)
