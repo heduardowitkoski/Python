@@ -1,0 +1,5 @@
+salario=float(input('Insira o salário: '))
+if salario<500:
+     print(salario*1.3)
+else:
+    print('Não tem direito a aumento')
