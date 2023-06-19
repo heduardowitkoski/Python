@@ -1,0 +1,13 @@
+totalavista=0
+totalaprazo=0
+for i in range (5):
+    codigo=input('v-Transação à vista\np-Transação a prazo\n')
+    valor = float(input('Insira o valor\n'))
+    if codigo == 'v':
+        totalavista=totalavista+valor
+    elif codigo == 'p':
+        totalaprazo=totalaprazo+valor
+print('valor total à vista: ',totalavista)
+print('valor total a prazo: ',totalaprazo)
+print('valor total das compras: ',totalavista+totalaprazo)
+print('primeira prestação das compras a prazo: ',totalaprazo/3)
