@@ -1,0 +1,19 @@
+def valores (a,b,c,d):
+    lista=[]
+    lista.append(a)
+    lista.append(b)
+    lista.append(c)
+    lista.append(d)
+    print(lista)
+    lista.sort()
+    print(lista)
+    lista.sort(reverse=True)
+    print(lista)
+
+
+for i in range(5):
+    a=int(input('Insira um valor: '))
+    b=int(input('Insira um valor: '))
+    c=int(input('Insira um valor: '))
+    d=int(input('Insira um valor: '))
+    valores (a,b,c,d)
