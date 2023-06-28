@@ -1,6 +1,5 @@
-print('\tTABELA DE PREÇOS\nlucro\tpreço do ingresso\tquantidade de ingresso: ')
-for i in range(8):
+print('\t\t\tTABELA DE PREÇOS\nlucro\t\tpreço do ingresso\tquantidade de ingresso: ')
+for i in range(9):
     qtdeingresso=120+26*i
     valoringresso=5-(0.5)*i
-    lucro=qtdeingresso*valoringresso
-    print('{}\t\t{}\t\t\t\t\t{}'.format(lucro,valoringresso,qtdeingresso))
+    print('R${:.2f}\t\tR${:.2f}\t\t\t\t\t{}'.format((qtdeingresso*valoringresso)-200,valoringresso,qtdeingresso))
