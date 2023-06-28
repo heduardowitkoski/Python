@@ -1,8 +1,8 @@
 totalavista=0
 totalaprazo=0
 for i in range (5):
-    codigo=input('v-Transação à vista\np-Transação a prazo\n')
-    valor = float(input('Insira o valor\n'))
+    codigo=input('v-Transação à vista\np-Transação a prazo: ')
+    valor = float(input('Insira o valor: '))
     if codigo == 'v':
         totalavista=totalavista+valor
     elif codigo == 'p':
