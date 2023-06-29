@@ -32,3 +32,39 @@ int main()
 
 
 #####################################
+
+#include <stdio.h>
+
+int main()
+{
+    float acumuladorValorCusto=0,valorCusto=-1,acumuladorValorLucro=0,valorLucro=-1,acumuladorEstoque=0,estoqueDeProdutos=-1,roi=0;
+
+    while (valorCusto!=0)
+    {
+    printf("Insira um valor gasto para viabilizar o empreendimento: (se não há mais valores, insira 0) ");
+    scanf("%f",&valorCusto);
+    acumuladorValorCusto+=valorCusto;
+    }
+    while (estoqueDeProdutos!=0)
+    {
+    printf("Insira o valor do estoque de produtos que serão vendidos: (se não há mais valores, insira 0) ");
+    scanf("%f",&estoqueDeProdutos);
+    acumuladorEstoque+=estoqueDeProdutos;
+    }
+    while (valorLucro!=0)
+    {
+    printf("Insira um valor recebido a partir da venda dos produtos ou serviços : (se não há mais valores, insira 0) ");
+    scanf("%f",&valorLucro);
+    acumuladorValorLucro+=valorLucro;
+    }
+    roi=(acumuladorValorLucro-(acumuladorValorCusto+estoqueDeProdutos))/(acumuladorValorCusto+estoqueDeProdutos);
+    if (roi==0)
+    printf("Zero a Zero");
+    else if (roi<1)
+    printf("Prejuízo");
+    else
+    printf("Lucro");
+
+    return 0;
+}
+
