@@ -18,14 +18,19 @@ acumuladorValorCusto=0
 valorCusto=-1
 acumuladorValorLucro=0
 valorLucro=-1
+acumuladorEstoque=0
+estoqueDeProdutos=-1
+
 
 while valorCusto!=0:
-    valorCusto=float(input('Insira um valor gasto para viabilizar o empreendimento: (se não há mais valores, insira 0)'))
+    valorCusto=float(input('Insira um valor gasto para viabilizar o empreendimento: (se não há mais valores, insira 0) '))
     acumuladorValorCusto+=valorCusto
-estoqueDeProdutos=float(input('Insira o valor do estoque de produtos que serão vendidos: '))
 
+while estoqueDeProdutos!=0:
+    estoqueDeProdutos=float(input('Insira o valor do estoque de produtos que serão vendidos: (se não há mais valores, insira 0) '))
+    acumuladorEstoque+=estoqueDeProdutos
 while valorLucro!=0:
-    valorLucro=float(input('Insira um valor recebido a partir da venda dos produtos ou serviços : (se não há mais valores, insira 0)'))
+    valorLucro=float(input('Insira um valor recebido a partir da venda dos produtos ou serviços : (se não há mais valores, insira 0) '))
     acumuladorValorLucro+=valorLucro
 
 roi=(acumuladorValorLucro-(acumuladorValorCusto+estoqueDeProdutos))/(acumuladorValorCusto+estoqueDeProdutos)
@@ -35,3 +40,5 @@ elif roi<1:
     print('Prejuízo')
 else:
     print('Lucro')
+
+
